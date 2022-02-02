@@ -24,3 +24,11 @@ logging:
     name: logs/prorent.log
   pattern:
     file: "%d %-5level [%thread] %logger:%msg%n"
+    
+prorent:
+  app:
+    jwtSecret: prorent
+    #60*60*24*1000
+    jwtExpirationMs: 86400000     
+    
+    
