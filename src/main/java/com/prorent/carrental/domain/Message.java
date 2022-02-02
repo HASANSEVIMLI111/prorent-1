@@ -38,13 +38,13 @@ public class Message implements Serializable {
 	
 	@NotBlank(message="Please provide not blank name")
 	@NotNull(message="Please provide your name")
-	@Size(min=1,max=15,message="Your name '{validatedValue}' must be between {min} and {max} chracters long")
+	@Size(min=1,max=15,message="Your name '${validatedValue}' must be between {min} and {max} chracters long")
 	@Column(length=15,nullable=false)
 	private String name;	
 	
 	@NotBlank(message="Please provide not blank subject")
 	@NotNull(message="Please provide your subject")
-	@Size(min=5,max=15,message="Your subject '{validatedValue}' must be between {min} and {max} chracters long")
+	@Size(min=5,max=15,message="Your subject '${validatedValue}' must be between {min} and {max} chracters long")
 	@Column(length=15,nullable=false)
 	private String subject;
 	
