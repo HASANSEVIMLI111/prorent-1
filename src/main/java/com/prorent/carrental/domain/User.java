@@ -62,9 +62,9 @@ public class User {
 	
 	@NotNull(message="Please provide your password")
 	@NotBlank(message="Please provide your password")
-	@Size(min=4,max=20,message="Password '${validatedValue}' must be between {min} and {max} chracters long")
+	@Size(min=4,max=60,message="Password '${validatedValue}' must be between {min} and {max} chracters long")
 	@Column(nullable=false,length=255)
-	private String pasword;
+	private String password;
 	
 	// (555) 555 5555
 	// 555-555-5555
