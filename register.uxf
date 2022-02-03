@@ -6,10 +6,10 @@
     <coordinates>
       <x>230</x>
       <y>0</y>
-      <w>100</w>
+      <w>130</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>UserController
+    <panel_attributes>UserJWTController
 bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
