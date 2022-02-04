@@ -27,8 +27,8 @@ public class LoginVM {
 	@Override
 	public String toString() {
 	return "LoginVM{"+
-			"email='"+email+
-			'}';
+			"email="+email+
+			"}";
 	}
 	
 }

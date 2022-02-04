@@ -1,0 +1,921 @@
+2022-02-04 18:44:08,815 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 19316 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 18:44:08,816 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 18:44:08,883 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 18:44:08,884 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 18:44:10,079 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 18:44:10,166 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2022-02-04 18:44:11,063 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 18:44:11,074 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 18:44:11,075 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 18:44:11,203 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 18:44:11,203 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2316 ms
+2022-02-04 18:44:11,536 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 18:44:11,666 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 18:44:11,960 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 18:44:12,094 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 18:44:12,425 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 18:44:12,446 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 18:44:13,853 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 18:44:13,869 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 18:44:14,510 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 18:44:15,015 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@777935d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@62db1399, org.springframework.security.web.header.HeaderWriterFilter@1d80dbae, org.springframework.security.web.authentication.logout.LogoutFilter@33733676, com.prorent.carrental.security.AuthTokenFilter@7ef1da5a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3754cbbb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78d2b148, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69e0f1b2, org.springframework.security.web.session.SessionManagementFilter@24c25e83, org.springframework.security.web.access.ExceptionTranslationFilter@148c8b65, org.springframework.security.web.access.intercept.AuthorizationFilter@7b6e9d0f]
+2022-02-04 18:44:15,723 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 18:44:15,837 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 18:44:15,869 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 7.755 seconds (JVM running for 17.537)
+2022-02-04 18:47:37,096 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 18:47:37,098 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 18:47:37,100 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-02-04 18:47:38,441 ERROR [http-nio-8080-exec-2] com.prorent.carrental.security.AuthEntryPointJwt:Unauthorized error Bad credentials
+2022-02-04 18:52:44,993 INFO  [RMI TCP Connection(17)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-02-04 18:52:45,069 INFO  [RMI TCP Connection(17)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 18:52:45,073 INFO  [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-02-04 18:52:45,091 INFO  [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-02-04 18:52:55,823 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 2364 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 18:52:55,828 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 18:52:55,942 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 18:52:55,943 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 18:52:57,088 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 18:52:57,179 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2022-02-04 18:52:58,174 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 18:52:58,185 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 18:52:58,186 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 18:52:58,282 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 18:52:58,283 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2338 ms
+2022-02-04 18:52:58,562 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 18:52:58,649 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 18:52:58,964 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 18:52:59,118 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 18:52:59,379 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 18:52:59,406 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 18:53:00,624 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 18:53:00,634 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 18:53:01,253 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 18:53:01,918 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f8abbef, org.springframework.security.web.context.SecurityContextPersistenceFilter@32eeff7d, org.springframework.security.web.header.HeaderWriterFilter@2ce79edc, org.springframework.security.web.authentication.logout.LogoutFilter@16bbf12e, com.prorent.carrental.security.AuthTokenFilter@2da0acaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bfc0a83, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b93f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aebc917, org.springframework.security.web.session.SessionManagementFilter@7745fe3a, org.springframework.security.web.access.ExceptionTranslationFilter@115987ac, org.springframework.security.web.access.intercept.AuthorizationFilter@796a75a0]
+2022-02-04 18:53:02,542 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 18:53:02,655 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 18:53:02,679 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 7.66 seconds (JVM running for 9.616)
+2022-02-04 18:53:19,457 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 18:53:19,461 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 18:53:19,476 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 9 ms
+2022-02-04 18:57:30,206 INFO  [RMI TCP Connection(12)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-02-04 18:57:30,271 INFO  [RMI TCP Connection(12)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 18:57:30,290 INFO  [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-02-04 18:57:30,301 INFO  [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-02-04 19:16:10,094 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:16:10,097 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:16:10,202 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 19:16:10,202 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 19:16:11,920 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:16:12,014 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:16:13,036 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:16:13,050 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:16:13,051 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:16:13,157 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:16:13,158 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2953 ms
+2022-02-04 19:16:13,447 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:16:13,507 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 19:16:13,773 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 19:16:13,905 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 19:16:14,206 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 19:16:14,245 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:16:15,866 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:16:15,884 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:16:16,817 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:16:17,355 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a6d201d, org.springframework.security.web.context.SecurityContextPersistenceFilter@198643ee, org.springframework.security.web.header.HeaderWriterFilter@7962e30f, org.springframework.security.web.authentication.logout.LogoutFilter@1756c627, com.prorent.carrental.security.AuthTokenFilter@4dfefd5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c0ee0c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37c822c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@730f6863, org.springframework.security.web.session.SessionManagementFilter@55cc3869, org.springframework.security.web.access.ExceptionTranslationFilter@6507ae7d, org.springframework.security.web.access.intercept.AuthorizationFilter@724f59f1]
+2022-02-04 19:16:18,159 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:16:18,242 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:16:18,254 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 9.033 seconds (JVM running for 10.566)
+2022-02-04 19:16:28,216 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 19:16:28,217 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 19:16:28,219 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-02-04 19:18:25,845 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:18:25,848 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-02-04 19:18:25,881 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-02-04 19:18:26,045 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:18:26,045 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:18:26,550 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:18:26,574 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:18:26,781 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:18:26,782 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:18:26,783 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:18:26,803 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:18:26,803 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 756 ms
+2022-02-04 19:18:26,888 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:18:26,897 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-02-04 19:18:27,003 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-02-04 19:18:27,007 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:18:27,212 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:18:27,213 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:18:27,434 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:18:27,586 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c3498d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@330fff50, org.springframework.security.web.header.HeaderWriterFilter@2f01c219, org.springframework.security.web.authentication.logout.LogoutFilter@3a6e3955, com.prorent.carrental.security.AuthTokenFilter@55778b4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@767593af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b905d9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75ba49b, org.springframework.security.web.session.SessionManagementFilter@3fe74aa2, org.springframework.security.web.access.ExceptionTranslationFilter@6d551d5b, org.springframework.security.web.access.intercept.AuthorizationFilter@6492b047]
+2022-02-04 19:18:27,798 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:18:27,821 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:18:27,844 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.86 seconds (JVM running for 140.156)
+2022-02-04 19:18:27,850 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:18:38,713 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 19:18:38,716 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 19:18:38,726 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 7 ms
+2022-02-04 19:44:09,624 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:44:09,629 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-02-04 19:44:09,639 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-02-04 19:44:09,798 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:44:09,799 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:44:10,081 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:44:10,110 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:44:10,321 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:44:10,325 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:44:10,332 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:44:10,362 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:44:10,362 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 560 ms
+2022-02-04 19:44:10,432 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:44:10,438 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Starting...
+2022-02-04 19:44:10,512 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Start completed.
+2022-02-04 19:44:10,513 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:44:10,650 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:44:10,651 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:44:10,821 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:44:10,965 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55e6751e, org.springframework.security.web.context.SecurityContextPersistenceFilter@277e6474, org.springframework.security.web.header.HeaderWriterFilter@9158440, org.springframework.security.web.authentication.logout.LogoutFilter@378fa615, com.prorent.carrental.security.AuthTokenFilter@37e0ff13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fd8b733, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a4a170c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f13deb9, org.springframework.security.web.session.SessionManagementFilter@7d249626, org.springframework.security.web.access.ExceptionTranslationFilter@1615c161, org.springframework.security.web.access.intercept.AuthorizationFilter@72c6635]
+2022-02-04 19:44:11,299 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:44:11,342 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:44:11,357 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.612 seconds (JVM running for 1683.669)
+2022-02-04 19:44:11,363 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:45:16,778 INFO  [Thread-11] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:45:16,779 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown initiated...
+2022-02-04 19:45:16,786 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown completed.
+2022-02-04 19:45:16,882 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:45:16,882 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:45:17,158 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:45:17,194 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:45:17,328 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:45:17,329 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:45:17,329 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:45:17,346 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:45:17,347 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 461 ms
+2022-02-04 19:45:17,412 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:45:17,420 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Starting...
+2022-02-04 19:45:17,522 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Start completed.
+2022-02-04 19:45:17,523 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:45:17,645 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:45:17,646 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:45:17,853 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:45:18,137 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69e582b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@36893a5d, org.springframework.security.web.header.HeaderWriterFilter@34b0a1d0, org.springframework.security.web.authentication.logout.LogoutFilter@3c5fe8c6, com.prorent.carrental.security.AuthTokenFilter@6bc65302, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d5d0bb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c5281e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2abf5e9a, org.springframework.security.web.session.SessionManagementFilter@3d1c5d48, org.springframework.security.web.access.ExceptionTranslationFilter@514950d7, org.springframework.security.web.access.intercept.AuthorizationFilter@71cfe76e]
+2022-02-04 19:45:18,514 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:45:18,550 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:45:18,557 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.71 seconds (JVM running for 1750.869)
+2022-02-04 19:45:18,562 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:45:24,053 INFO  [Thread-15] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:45:24,055 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown initiated...
+2022-02-04 19:45:24,069 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown completed.
+2022-02-04 19:45:24,309 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:45:24,312 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:45:24,791 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:45:24,835 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:45:25,038 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:45:25,039 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:45:25,039 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:45:25,058 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:45:25,059 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 728 ms
+2022-02-04 19:45:25,136 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:45:25,152 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Starting...
+2022-02-04 19:45:25,234 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Start completed.
+2022-02-04 19:45:25,235 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:45:25,412 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:45:25,412 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:45:25,617 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:45:25,846 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a464b29, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f6a9d7b, org.springframework.security.web.header.HeaderWriterFilter@1822f9fc, org.springframework.security.web.authentication.logout.LogoutFilter@7a19fd8c, com.prorent.carrental.security.AuthTokenFilter@4d764ec3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35e0f5aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a8207f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f063c70, org.springframework.security.web.session.SessionManagementFilter@1bc403de, org.springframework.security.web.access.ExceptionTranslationFilter@6d3ef5c1, org.springframework.security.web.access.intercept.AuthorizationFilter@627131a0]
+2022-02-04 19:45:26,102 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:45:26,126 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:45:26,133 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.971 seconds (JVM running for 1758.444)
+2022-02-04 19:45:26,138 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:47:07,407 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 19:47:07,408 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 19:47:07,421 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 10 ms
+2022-02-04 19:47:55,082 INFO  [Thread-19] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:47:55,083 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown initiated...
+2022-02-04 19:47:55,090 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown completed.
+2022-02-04 19:47:55,236 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:47:55,236 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:47:55,816 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:47:55,838 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:47:55,975 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:47:55,977 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:47:55,978 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:47:56,012 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:47:56,013 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 775 ms
+2022-02-04 19:47:56,114 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:47:56,127 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Starting...
+2022-02-04 19:47:56,253 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Start completed.
+2022-02-04 19:47:56,253 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:47:56,439 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:47:56,440 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:47:56,625 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:47:56,775 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ae91a2c, org.springframework.security.web.context.SecurityContextPersistenceFilter@d067098, org.springframework.security.web.header.HeaderWriterFilter@5d7a4a8f, org.springframework.security.web.authentication.logout.LogoutFilter@770247f4, com.prorent.carrental.security.AuthTokenFilter@741804d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bcd0acd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44ec1f09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fb1c962, org.springframework.security.web.session.SessionManagementFilter@66bd7c4b, org.springframework.security.web.access.ExceptionTranslationFilter@9f9fe93, org.springframework.security.web.access.intercept.AuthorizationFilter@708af972]
+2022-02-04 19:47:57,053 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:47:57,074 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:47:57,078 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.887 seconds (JVM running for 1909.39)
+2022-02-04 19:47:57,080 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:51:30,136 INFO  [Thread-23] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:51:30,136 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown initiated...
+2022-02-04 19:51:30,149 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown completed.
+2022-02-04 19:51:30,303 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:51:30,304 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:51:30,587 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:51:30,609 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:51:30,800 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:51:30,801 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:51:30,801 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:51:30,823 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:51:30,823 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 517 ms
+2022-02-04 19:51:30,868 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:51:30,874 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Starting...
+2022-02-04 19:51:30,931 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Start completed.
+2022-02-04 19:51:30,932 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:51:31,067 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:51:31,067 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:51:31,229 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:51:31,419 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e5c61e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@31cf54e7, org.springframework.security.web.header.HeaderWriterFilter@4748767a, org.springframework.security.web.authentication.logout.LogoutFilter@31ac7abc, com.prorent.carrental.security.AuthTokenFilter@8b288ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a69911f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e16cf8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c778b0c, org.springframework.security.web.session.SessionManagementFilter@347a00fa, org.springframework.security.web.access.ExceptionTranslationFilter@6239368f, org.springframework.security.web.access.intercept.AuthorizationFilter@4f592d2d]
+2022-02-04 19:51:31,687 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:51:31,710 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:51:31,715 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.464 seconds (JVM running for 2124.027)
+2022-02-04 19:51:31,717 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:55:53,327 INFO  [Thread-27] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:55:53,328 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown initiated...
+2022-02-04 19:55:53,338 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown completed.
+2022-02-04 19:55:53,450 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 19:55:53,450 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 19:55:53,702 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 19:55:53,736 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2022-02-04 19:55:53,902 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 19:55:53,903 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 19:55:53,903 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 19:55:53,932 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 19:55:53,932 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 479 ms
+2022-02-04 19:55:54,014 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 19:55:54,020 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Starting...
+2022-02-04 19:55:54,098 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Start completed.
+2022-02-04 19:55:54,099 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 19:55:54,351 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 19:55:54,353 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 19:55:54,627 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 19:55:54,788 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@570e37f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@496e433e, org.springframework.security.web.header.HeaderWriterFilter@146f9a0a, org.springframework.security.web.authentication.logout.LogoutFilter@1571c76e, com.prorent.carrental.security.AuthTokenFilter@4940b815, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3acc03a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10e9c135, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c5fc0c9, org.springframework.security.web.session.SessionManagementFilter@27533723, org.springframework.security.web.access.ExceptionTranslationFilter@11b2886f, org.springframework.security.web.access.intercept.AuthorizationFilter@11c48fdb]
+2022-02-04 19:55:55,028 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 19:55:55,049 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 19:55:55,054 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.639 seconds (JVM running for 2387.366)
+2022-02-04 19:55:55,057 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 19:57:35,528 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 19:57:35,528 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 19:57:35,530 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-02-04 19:57:35,531 ERROR [http-nio-8080-exec-2] com.prorent.carrental.security.JwtUtils:Malformed JWT Token JWT strings must contain exactly 2 period characters. Found: 3
+2022-02-04 19:57:35,533 ERROR [http-nio-8080-exec-2] com.prorent.carrental.security.AuthEntryPointJwt:Unauthorized error Full authentication is required to access this resource
+2022-02-04 19:57:57,529 ERROR [http-nio-8080-exec-3] com.prorent.carrental.security.JwtUtils:Malformed JWT Token JWT strings must contain exactly 2 period characters. Found: 3
+2022-02-04 19:57:57,530 ERROR [http-nio-8080-exec-3] com.prorent.carrental.security.AuthEntryPointJwt:Unauthorized error Full authentication is required to access this resource
+2022-02-04 20:03:03,298 INFO  [Thread-31] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:03:03,299 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown initiated...
+2022-02-04 20:03:03,324 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown completed.
+2022-02-04 20:03:03,514 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:03:03,515 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:03:03,926 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:03:03,947 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:03:04,168 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:03:04,168 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:03:04,169 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:03:04,201 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:03:04,201 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 683 ms
+2022-02-04 20:03:04,302 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:03:04,310 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-9 - Starting...
+2022-02-04 20:03:04,395 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-9 - Start completed.
+2022-02-04 20:03:04,396 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:03:04,560 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:03:04,560 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:03:04,687 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:03:04,836 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@127fb7a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5641314a, org.springframework.security.web.header.HeaderWriterFilter@8a12478, org.springframework.security.web.authentication.logout.LogoutFilter@610e565e, com.prorent.carrental.security.AuthTokenFilter@41b41343, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7229d72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73aabff7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d0bf12, org.springframework.security.web.session.SessionManagementFilter@6005af13, org.springframework.security.web.access.ExceptionTranslationFilter@424cc00c, org.springframework.security.web.access.intercept.AuthorizationFilter@7bd134b2]
+2022-02-04 20:03:05,233 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:03:05,272 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:03:05,275 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.838 seconds (JVM running for 2817.587)
+2022-02-04 20:03:05,281 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 20:04:34,611 INFO  [Thread-35] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:04:34,612 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource:HikariPool-9 - Shutdown initiated...
+2022-02-04 20:04:34,622 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource:HikariPool-9 - Shutdown completed.
+2022-02-04 20:04:34,855 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:04:34,856 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:04:35,158 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:04:35,182 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:04:35,359 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:04:35,363 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:04:35,364 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:04:35,400 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:04:35,400 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 535 ms
+2022-02-04 20:04:35,509 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:04:35,520 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-10 - Starting...
+2022-02-04 20:04:35,615 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-10 - Start completed.
+2022-02-04 20:04:35,616 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:04:35,795 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:04:35,795 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:04:35,981 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:04:36,215 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38214fca, org.springframework.security.web.context.SecurityContextPersistenceFilter@1afa5ba, org.springframework.security.web.header.HeaderWriterFilter@37469696, org.springframework.security.web.authentication.logout.LogoutFilter@2467c027, com.prorent.carrental.security.AuthTokenFilter@6b5d872d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7070df7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@738115c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@225dc611, org.springframework.security.web.session.SessionManagementFilter@455fccd, org.springframework.security.web.access.ExceptionTranslationFilter@a4f7c37, org.springframework.security.web.access.intercept.AuthorizationFilter@294e507c]
+2022-02-04 20:04:36,467 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:04:36,490 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:04:36,496 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.774 seconds (JVM running for 2908.808)
+2022-02-04 20:04:36,500 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 20:04:52,505 INFO  [Thread-39] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:04:52,506 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource:HikariPool-10 - Shutdown initiated...
+2022-02-04 20:04:52,512 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource:HikariPool-10 - Shutdown completed.
+2022-02-04 20:04:52,696 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:04:52,697 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:04:53,081 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:04:53,102 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:04:53,209 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:04:53,210 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:04:53,210 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:04:53,227 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:04:53,227 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 523 ms
+2022-02-04 20:04:53,275 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:04:53,289 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-11 - Starting...
+2022-02-04 20:04:53,378 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-11 - Start completed.
+2022-02-04 20:04:53,380 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:04:53,480 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:04:53,480 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:04:53,609 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:04:53,811 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17b0bbc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@7818d2e6, org.springframework.security.web.header.HeaderWriterFilter@204b2bca, org.springframework.security.web.authentication.logout.LogoutFilter@5ca71d2d, com.prorent.carrental.security.AuthTokenFilter@2b8598f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30288103, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4944f9b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@731a8268, org.springframework.security.web.session.SessionManagementFilter@2411ed01, org.springframework.security.web.access.ExceptionTranslationFilter@1d5ab442, org.springframework.security.web.access.intercept.AuthorizationFilter@461472db]
+2022-02-04 20:04:54,054 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:04:54,071 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:04:54,079 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.462 seconds (JVM running for 2926.391)
+2022-02-04 20:04:54,083 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 20:05:42,992 INFO  [Thread-43] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:05:42,993 INFO  [Thread-43] com.zaxxer.hikari.HikariDataSource:HikariPool-11 - Shutdown initiated...
+2022-02-04 20:05:43,003 INFO  [Thread-43] com.zaxxer.hikari.HikariDataSource:HikariPool-11 - Shutdown completed.
+2022-02-04 20:05:43,106 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:05:43,106 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:05:43,475 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:05:43,514 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:05:43,719 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:05:43,719 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:05:43,720 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:05:43,745 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:05:43,745 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 637 ms
+2022-02-04 20:05:43,837 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:05:43,848 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-12 - Starting...
+2022-02-04 20:05:43,951 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-12 - Start completed.
+2022-02-04 20:05:43,953 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:05:44,123 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:05:44,123 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:05:44,265 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:05:44,413 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a9f08f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@22d84c4b, org.springframework.security.web.header.HeaderWriterFilter@7fe5f464, org.springframework.security.web.authentication.logout.LogoutFilter@22db643e, com.prorent.carrental.security.AuthTokenFilter@ec04a54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fc00e8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f5683c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@739c7708, org.springframework.security.web.session.SessionManagementFilter@22c9fe72, org.springframework.security.web.access.ExceptionTranslationFilter@36dd631c, org.springframework.security.web.access.intercept.AuthorizationFilter@46434a52]
+2022-02-04 20:05:44,678 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:05:44,694 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:05:44,699 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.625 seconds (JVM running for 2977.01)
+2022-02-04 20:05:44,702 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 20:08:11,857 INFO  [Thread-47] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:08:11,857 INFO  [Thread-47] com.zaxxer.hikari.HikariDataSource:HikariPool-12 - Shutdown initiated...
+2022-02-04 20:08:11,866 INFO  [Thread-47] com.zaxxer.hikari.HikariDataSource:HikariPool-12 - Shutdown completed.
+2022-02-04 20:08:11,971 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:08:11,971 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:08:12,248 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:08:12,283 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:08:12,458 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:08:12,461 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:08:12,462 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:08:12,488 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:08:12,488 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 515 ms
+2022-02-04 20:08:12,565 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:08:12,575 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-13 - Starting...
+2022-02-04 20:08:12,662 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-13 - Start completed.
+2022-02-04 20:08:12,663 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:08:12,832 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:08:12,833 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:08:13,028 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:08:13,242 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52cbf648, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cc5eaf5, org.springframework.security.web.header.HeaderWriterFilter@34965a46, org.springframework.security.web.authentication.logout.LogoutFilter@7b3b136e, com.prorent.carrental.security.AuthTokenFilter@66fcdfc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26d9f220, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@201bd8d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71c82f1c, org.springframework.security.web.session.SessionManagementFilter@5ff2f371, org.springframework.security.web.access.ExceptionTranslationFilter@5fc8a9c4, org.springframework.security.web.access.intercept.AuthorizationFilter@6c39093f]
+2022-02-04 20:08:13,518 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:08:13,550 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:08:13,572 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.64 seconds (JVM running for 3125.884)
+2022-02-04 20:08:13,579 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 20:08:45,010 INFO  [Thread-51] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:08:45,011 INFO  [Thread-51] com.zaxxer.hikari.HikariDataSource:HikariPool-13 - Shutdown initiated...
+2022-02-04 20:08:45,016 INFO  [Thread-51] com.zaxxer.hikari.HikariDataSource:HikariPool-13 - Shutdown completed.
+2022-02-04 20:08:45,168 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:08:45,169 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:08:45,484 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:08:45,506 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:08:45,665 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:08:45,666 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:08:45,666 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:08:45,699 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:08:45,699 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 527 ms
+2022-02-04 20:08:45,775 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:08:45,795 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-14 - Starting...
+2022-02-04 20:08:45,870 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-14 - Start completed.
+2022-02-04 20:08:45,872 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:08:46,041 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:08:46,041 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:08:46,225 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:08:46,340 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@493ccb6d]
+2022-02-04 20:08:46,340 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:08:46,340 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-14 - Shutdown initiated...
+2022-02-04 20:08:46,387 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-14 - Shutdown completed.
+2022-02-04 20:08:46,388 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-02-04 20:08:46,397 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-04 20:08:46,476 ERROR [restartedMain] org.springframework.boot.SpringApplication:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@493ccb6d]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.prorent.carrental.CarRentalServiceApplication.main(CarRentalServiceApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@493ccb6d]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AdminDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.15.jar:5.3.15]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AdminDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 29 common frames omitted
+2022-02-04 20:13:41,314 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:13:41,315 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:13:41,755 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:13:41,802 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:13:42,096 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:13:42,098 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:13:42,100 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:13:42,128 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:13:42,129 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 810 ms
+2022-02-04 20:13:42,192 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:13:42,213 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-15 - Starting...
+2022-02-04 20:13:42,302 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-15 - Start completed.
+2022-02-04 20:13:42,304 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:13:42,471 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:13:42,471 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:13:42,675 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:13:42,800 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a197ddc]
+2022-02-04 20:13:42,801 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:13:42,802 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-15 - Shutdown initiated...
+2022-02-04 20:13:42,875 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-15 - Shutdown completed.
+2022-02-04 20:13:42,876 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-02-04 20:13:42,885 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-04 20:13:42,899 ERROR [restartedMain] org.springframework.boot.SpringApplication:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a197ddc]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.prorent.carrental.CarRentalServiceApplication.main(CarRentalServiceApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a197ddc]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AdminDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.15.jar:5.3.15]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AdminDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 29 common frames omitted
+2022-02-04 20:13:56,737 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 14076 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:13:56,737 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:13:56,992 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:13:57,037 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:13:57,233 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:13:57,235 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:13:57,235 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:13:57,259 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:13:57,259 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 520 ms
+2022-02-04 20:13:57,346 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:13:57,352 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-16 - Starting...
+2022-02-04 20:13:57,538 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-16 - Start completed.
+2022-02-04 20:13:57,539 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:13:57,643 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:13:57,644 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:13:57,756 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:13:57,827 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@653bced5]
+2022-02-04 20:13:57,827 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:13:57,827 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-16 - Shutdown initiated...
+2022-02-04 20:13:57,838 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-16 - Shutdown completed.
+2022-02-04 20:13:57,839 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-02-04 20:13:57,846 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-04 20:13:57,851 ERROR [restartedMain] org.springframework.boot.SpringApplication:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@653bced5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.prorent.carrental.CarRentalServiceApplication.main(CarRentalServiceApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.prorent.carrental.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@653bced5]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AdminDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.15.jar:5.3.15]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AdminDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 29 common frames omitted
+2022-02-04 20:42:12,255 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 15036 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 20:42:12,256 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 20:42:12,337 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 20:42:12,338 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 20:42:13,386 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 20:42:13,484 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2022-02-04 20:42:14,493 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 20:42:14,506 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 20:42:14,507 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 20:42:14,620 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 20:42:14,621 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2283 ms
+2022-02-04 20:42:14,888 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 20:42:14,963 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 20:42:15,276 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 20:42:15,469 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 20:42:15,777 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 20:42:15,812 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 20:42:16,927 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 20:42:16,936 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 20:42:17,611 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 20:42:18,257 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d62b642, org.springframework.security.web.context.SecurityContextPersistenceFilter@38e4a75f, org.springframework.security.web.header.HeaderWriterFilter@29cea431, org.springframework.security.web.authentication.logout.LogoutFilter@13668e65, com.prorent.carrental.security.AuthTokenFilter@7ebae800, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e89a295, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71825a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f0546a5, org.springframework.security.web.session.SessionManagementFilter@1822e62, org.springframework.security.web.access.ExceptionTranslationFilter@123dd748, org.springframework.security.web.access.intercept.AuthorizationFilter@6e17e25d]
+2022-02-04 20:42:18,990 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 20:42:19,085 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 20:42:19,095 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 7.573 seconds (JVM running for 9.13)
+2022-02-04 20:43:09,077 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 20:43:09,078 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 20:43:09,081 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2022-02-04 21:05:54,801 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:05:54,813 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-02-04 21:05:54,835 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-02-04 21:05:55,031 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 15036 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:05:55,032 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:05:55,587 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:05:55,624 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:05:55,916 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:05:55,917 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:05:55,918 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:05:55,962 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:05:55,963 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 928 ms
+2022-02-04 21:05:56,106 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:05:56,139 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-02-04 21:05:56,243 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-02-04 21:05:56,244 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:05:56,592 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:05:56,593 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:05:56,880 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:05:57,142 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16d2904d, org.springframework.security.web.context.SecurityContextPersistenceFilter@67d711d2, org.springframework.security.web.header.HeaderWriterFilter@307865b0, org.springframework.security.web.authentication.logout.LogoutFilter@78e332d3, com.prorent.carrental.security.AuthTokenFilter@1c4ad059, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a102fdc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49b688cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e368c15, org.springframework.security.web.session.SessionManagementFilter@30ebdad3, org.springframework.security.web.access.ExceptionTranslationFilter@3b5cc8dc, org.springframework.security.web.access.intercept.AuthorizationFilter@4750980]
+2022-02-04 21:05:57,499 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:05:57,523 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:05:57,530 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.6 seconds (JVM running for 1427.564)
+2022-02-04 21:05:57,547 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 21:06:51,185 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 21:06:51,189 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 21:06:51,198 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 9 ms
+2022-02-04 21:09:23,333 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:09:23,335 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-02-04 21:09:23,473 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-02-04 21:09:23,829 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 15036 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:09:23,832 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:09:24,459 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:09:24,505 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:09:24,640 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:09:24,641 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:09:24,641 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:09:24,660 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:09:24,660 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 818 ms
+2022-02-04 21:09:24,757 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:09:24,764 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Starting...
+2022-02-04 21:09:24,849 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Start completed.
+2022-02-04 21:09:24,849 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:09:25,069 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:09:25,069 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:09:25,281 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:09:25,471 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76d32e52, org.springframework.security.web.context.SecurityContextPersistenceFilter@6be0ac76, org.springframework.security.web.header.HeaderWriterFilter@43c978fd, org.springframework.security.web.authentication.logout.LogoutFilter@2dea460, com.prorent.carrental.security.AuthTokenFilter@259369a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@475703be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fd18539, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9a71122, org.springframework.security.web.session.SessionManagementFilter@6598cb34, org.springframework.security.web.access.ExceptionTranslationFilter@1297c19d, org.springframework.security.web.access.intercept.AuthorizationFilter@771fe6e]
+2022-02-04 21:09:25,761 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:09:25,806 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:09:25,825 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.219 seconds (JVM running for 1635.86)
+2022-02-04 21:09:25,829 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 21:09:52,083 INFO  [Thread-11] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:09:52,085 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown initiated...
+2022-02-04 21:09:52,093 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown completed.
+2022-02-04 21:09:52,324 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 15036 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:09:52,324 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:09:52,857 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:09:52,916 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:09:53,070 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:09:53,071 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:09:53,072 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:09:53,126 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:09:53,129 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 784 ms
+2022-02-04 21:09:53,262 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:09:53,272 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Starting...
+2022-02-04 21:09:53,385 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Start completed.
+2022-02-04 21:09:53,386 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:09:53,527 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:09:53,528 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:09:53,790 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:09:54,100 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@495bf875, org.springframework.security.web.context.SecurityContextPersistenceFilter@8ef004f, org.springframework.security.web.header.HeaderWriterFilter@7d0185b8, org.springframework.security.web.authentication.logout.LogoutFilter@74f9f07e, com.prorent.carrental.security.AuthTokenFilter@7eae2e82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4746ef31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@369b9e24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@729a9b20, org.springframework.security.web.session.SessionManagementFilter@5b4d3002, org.springframework.security.web.access.ExceptionTranslationFilter@61e5c07b, org.springframework.security.web.access.intercept.AuthorizationFilter@6eb662ab]
+2022-02-04 21:09:54,316 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:09:54,350 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:09:54,362 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.141 seconds (JVM running for 1664.396)
+2022-02-04 21:09:54,365 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 21:09:55,045 INFO  [RMI TCP Connection(39)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-02-04 21:09:55,166 INFO  [RMI TCP Connection(39)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:09:55,168 INFO  [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown initiated...
+2022-02-04 21:09:55,187 INFO  [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown completed.
+2022-02-04 21:38:27,448 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:38:27,450 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:38:27,545 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 21:38:27,546 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 21:38:28,830 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:38:28,937 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 98 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:38:30,045 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:38:30,060 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:38:30,061 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:38:30,217 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:38:30,217 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2671 ms
+2022-02-04 21:38:30,533 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:38:30,606 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 21:38:30,939 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 21:38:31,154 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 21:38:31,402 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 21:38:31,448 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:38:32,654 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:38:32,664 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:38:33,366 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:38:33,929 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@228620a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@34ca30af, org.springframework.security.web.header.HeaderWriterFilter@30b01a6d, org.springframework.security.web.authentication.logout.LogoutFilter@6dce1ec3, com.prorent.carrental.security.AuthTokenFilter@6ec4b388, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57c1764e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@696b5982, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65e1cead, org.springframework.security.web.session.SessionManagementFilter@9612f62, org.springframework.security.web.access.ExceptionTranslationFilter@e381b85, org.springframework.security.web.access.intercept.AuthorizationFilter@6fe72f0a]
+2022-02-04 21:38:34,546 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:38:34,626 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:38:34,642 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 7.853 seconds (JVM running for 9.361)
+2022-02-04 21:40:38,595 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 21:40:38,595 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 21:40:38,599 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 3 ms
+2022-02-04 21:41:10,298 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Boolean>> com.prorent.carrental.controller.UserController.updateUser(javax.servlet.http.HttpServletRequest,com.prorent.carrental.service.dto.UserDTO) with 2 errors: [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotNull.userDTO.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [Please provide your password]] [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotBlank.userDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [Please provide your password]] ]
+2022-02-04 21:42:08,949 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:42:08,959 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-02-04 21:42:08,973 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-02-04 21:42:09,172 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:42:09,173 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:42:09,605 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:42:09,633 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:42:09,861 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:42:09,862 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:42:09,863 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:42:09,885 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:42:09,887 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 708 ms
+2022-02-04 21:42:09,972 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:42:09,986 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-02-04 21:42:10,070 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-02-04 21:42:10,070 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:42:10,342 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:42:10,343 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:42:10,544 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:42:10,782 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35427565, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f92a1fb, org.springframework.security.web.header.HeaderWriterFilter@7beddac5, org.springframework.security.web.authentication.logout.LogoutFilter@511a8a91, com.prorent.carrental.security.AuthTokenFilter@75f378c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15ccfa7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e231f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@445e9ce8, org.springframework.security.web.session.SessionManagementFilter@397047d, org.springframework.security.web.access.ExceptionTranslationFilter@4c34c014, org.springframework.security.web.access.intercept.AuthorizationFilter@4fae46e1]
+2022-02-04 21:42:11,134 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:42:11,151 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:42:11,156 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.076 seconds (JVM running for 225.876)
+2022-02-04 21:42:11,159 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 21:42:32,762 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 21:42:32,763 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 21:42:32,769 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 6 ms
+2022-02-04 21:42:32,923 WARN  [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Boolean>> com.prorent.carrental.controller.UserController.updateUser(javax.servlet.http.HttpServletRequest,com.prorent.carrental.service.dto.UserDTO) with 2 errors: [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotNull.userDTO.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [Please provide your password]] [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotBlank.userDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [Please provide your password]] ]
+2022-02-04 21:45:22,926 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:45:22,927 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-02-04 21:45:22,938 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-02-04 21:45:23,081 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 21:45:23,081 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 21:45:23,543 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 21:45:23,569 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2022-02-04 21:45:23,706 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 21:45:23,711 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 21:45:23,712 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 21:45:23,785 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 21:45:23,786 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 701 ms
+2022-02-04 21:45:23,929 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 21:45:23,942 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Starting...
+2022-02-04 21:45:24,141 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Start completed.
+2022-02-04 21:45:24,142 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 21:45:24,390 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 21:45:24,391 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 21:45:24,797 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 21:45:25,181 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a1f334a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4086b799, org.springframework.security.web.header.HeaderWriterFilter@707bc2b2, org.springframework.security.web.authentication.logout.LogoutFilter@1a9b4fbb, com.prorent.carrental.security.AuthTokenFilter@6e00696d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1874ca00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3634f5ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d2bf53a, org.springframework.security.web.session.SessionManagementFilter@43d35d52, org.springframework.security.web.access.ExceptionTranslationFilter@7bd47fc6, org.springframework.security.web.access.intercept.AuthorizationFilter@8316d77]
+2022-02-04 21:45:25,672 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 21:45:25,721 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 21:45:25,731 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.707 seconds (JVM running for 420.451)
+2022-02-04 21:45:25,737 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 21:45:32,506 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 21:45:32,514 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 21:45:32,519 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 3 ms
+2022-02-04 22:00:21,906 INFO  [Thread-11] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:00:21,908 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown initiated...
+2022-02-04 22:00:21,923 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown completed.
+2022-02-04 22:00:22,060 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 22:00:22,061 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 22:00:22,595 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 22:00:22,628 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2022-02-04 22:00:22,870 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 22:00:22,873 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 22:00:22,874 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 22:00:22,895 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 22:00:22,895 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 830 ms
+2022-02-04 22:00:23,029 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 22:00:23,044 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Starting...
+2022-02-04 22:00:23,127 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Start completed.
+2022-02-04 22:00:23,127 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 22:00:23,313 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 22:00:23,314 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:00:23,447 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 22:00:23,739 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1568a021, org.springframework.security.web.context.SecurityContextPersistenceFilter@66592435, org.springframework.security.web.header.HeaderWriterFilter@4fb376a5, org.springframework.security.web.authentication.logout.LogoutFilter@3c7e5958, com.prorent.carrental.security.AuthTokenFilter@1314a798, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@491ef123, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d4ca0fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b929f4d, org.springframework.security.web.session.SessionManagementFilter@6f6eb7ab, org.springframework.security.web.access.ExceptionTranslationFilter@11e7c1fc, org.springframework.security.web.access.intercept.AuthorizationFilter@5c3c40fc]
+2022-02-04 22:00:24,252 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 22:00:24,293 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 22:00:24,339 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.335 seconds (JVM running for 1319.059)
+2022-02-04 22:00:24,348 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 22:05:08,831 INFO  [Thread-15] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:05:08,833 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown initiated...
+2022-02-04 22:05:08,847 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown completed.
+2022-02-04 22:05:09,069 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 22:05:09,071 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 22:05:09,628 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 22:05:09,692 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2022-02-04 22:05:09,963 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 22:05:09,964 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 22:05:09,964 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 22:05:10,004 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 22:05:10,007 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 905 ms
+2022-02-04 22:05:10,105 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 22:05:10,111 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Starting...
+2022-02-04 22:05:10,191 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Start completed.
+2022-02-04 22:05:10,192 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 22:05:10,376 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 22:05:10,377 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:05:10,533 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 22:05:10,686 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25d2d089, org.springframework.security.web.context.SecurityContextPersistenceFilter@762b47bc, org.springframework.security.web.header.HeaderWriterFilter@39fc0f3f, org.springframework.security.web.authentication.logout.LogoutFilter@3bd0cabb, com.prorent.carrental.security.AuthTokenFilter@5542bb8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e65cb37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37b9a433, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1494ed0e, org.springframework.security.web.session.SessionManagementFilter@117630a1, org.springframework.security.web.access.ExceptionTranslationFilter@2cf6841a, org.springframework.security.web.access.intercept.AuthorizationFilter@6efdeb3f]
+2022-02-04 22:05:10,988 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 22:05:11,007 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 22:05:11,010 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 2.069 seconds (JVM running for 1605.73)
+2022-02-04 22:05:11,014 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 22:05:51,755 INFO  [Thread-19] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:05:51,756 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown initiated...
+2022-02-04 22:05:51,767 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown completed.
+2022-02-04 22:05:51,887 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 22:05:51,887 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 22:05:52,227 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 22:05:52,263 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2022-02-04 22:05:52,515 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 22:05:52,516 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 22:05:52,516 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 22:05:52,539 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 22:05:52,539 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 650 ms
+2022-02-04 22:05:52,607 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 22:05:52,625 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Starting...
+2022-02-04 22:05:52,712 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Start completed.
+2022-02-04 22:05:52,712 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 22:05:52,890 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 22:05:52,890 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:05:53,122 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 22:05:53,286 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fb6be26, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bcd4546, org.springframework.security.web.header.HeaderWriterFilter@3ee6979e, org.springframework.security.web.authentication.logout.LogoutFilter@27663393, com.prorent.carrental.security.AuthTokenFilter@33f195ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cba5b8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76ea69e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@95afce8, org.springframework.security.web.session.SessionManagementFilter@3a2f42b5, org.springframework.security.web.access.ExceptionTranslationFilter@507af140, org.springframework.security.web.access.intercept.AuthorizationFilter@2c2ea766]
+2022-02-04 22:05:53,518 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 22:05:53,556 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 22:05:53,564 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.715 seconds (JVM running for 1648.284)
+2022-02-04 22:05:53,600 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 22:07:27,984 INFO  [Thread-23] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:07:27,986 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown initiated...
+2022-02-04 22:07:27,992 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown completed.
+2022-02-04 22:07:28,151 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 18764 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 22:07:28,152 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 22:07:28,466 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 22:07:28,491 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2022-02-04 22:07:28,690 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 22:07:28,691 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 22:07:28,691 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 22:07:28,705 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 22:07:28,705 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 549 ms
+2022-02-04 22:07:28,761 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 22:07:28,769 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Starting...
+2022-02-04 22:07:28,840 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Start completed.
+2022-02-04 22:07:28,842 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 22:07:29,007 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 22:07:29,008 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:07:29,198 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 22:07:29,426 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27f66146, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c878414, org.springframework.security.web.header.HeaderWriterFilter@6be670be, org.springframework.security.web.authentication.logout.LogoutFilter@565d84cd, com.prorent.carrental.security.AuthTokenFilter@1b6c4c20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bcd9e8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33f670cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d37f299, org.springframework.security.web.session.SessionManagementFilter@7d8d1c82, org.springframework.security.web.access.ExceptionTranslationFilter@70dae6e1, org.springframework.security.web.access.intercept.AuthorizationFilter@51931bbb]
+2022-02-04 22:07:29,707 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 22:07:29,730 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 22:07:29,736 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 1.656 seconds (JVM running for 1744.456)
+2022-02-04 22:07:29,738 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-02-04 22:10:06,273 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-04 22:10:06,274 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-02-04 22:10:06,276 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-02-04 22:13:07,202 INFO  [RMI TCP Connection(62)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-02-04 22:13:07,382 INFO  [RMI TCP Connection(62)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:13:07,383 INFO  [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown initiated...
+2022-02-04 22:13:07,413 INFO  [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown completed.
+2022-02-04 22:13:34,511 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Starting CarRentalServiceApplication using Java 17.0.1 on DESKTOP-TRTNKFD with PID 19572 (C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService\target\classes started by devops in C:\Users\devops\Desktop\Car-Rental-workspace\CarRentalService)
+2022-02-04 22:13:34,513 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:No active profile set, falling back to default profiles: default
+2022-02-04 22:13:34,580 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-04 22:13:34,580 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-04 22:13:36,056 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-04 22:13:36,220 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 153 ms. Found 3 JPA repository interfaces.
+2022-02-04 22:13:37,280 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2022-02-04 22:13:37,296 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-02-04 22:13:37,296 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-04 22:13:37,458 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring embedded WebApplicationContext
+2022-02-04 22:13:37,458 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2877 ms
+2022-02-04 22:13:37,701 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-04 22:13:37,781 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-04 22:13:38,032 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-04 22:13:38,195 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-02-04 22:13:38,461 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-02-04 22:13:38,487 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-02-04 22:13:39,709 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-04 22:13:39,719 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-04 22:13:40,407 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-04 22:13:41,033 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@733ee1a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@29d0a2ab, org.springframework.security.web.header.HeaderWriterFilter@3fd3b565, org.springframework.security.web.authentication.logout.LogoutFilter@ec978e6, com.prorent.carrental.security.AuthTokenFilter@47599ad1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@676d5d32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48bfb558, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e26477a, org.springframework.security.web.session.SessionManagementFilter@5d1ec47d, org.springframework.security.web.access.ExceptionTranslationFilter@6e055f53, org.springframework.security.web.access.intercept.AuthorizationFilter@64818f08]
+2022-02-04 22:13:41,623 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-02-04 22:13:41,728 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path '/car-rental/api'
+2022-02-04 22:13:41,743 INFO  [restartedMain] com.prorent.carrental.CarRentalServiceApplication:Started CarRentalServiceApplication in 8.4 seconds (JVM running for 20.99)
+2022-02-04 22:13:59,852 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/car-rental/api]:Initializing Spring DispatcherServlet 'dispatcherServlet'
