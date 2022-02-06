@@ -88,10 +88,6 @@ public class UserDTO {
 	}
 	
 	
-	public Set<Role> getRole(){
-		return roles;
-	}
-	
 	//ROLE_CUSTOMER ve ROLE_ADMIN içeren bir Seti Administrator ve Customer 
 	//içeren bir sete dönüştürdüm.
 	public Set<String> getRoles(){

@@ -1,5 +1,6 @@
 package com.prorent.carrental.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -27,5 +28,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 			@Param("lastName") String lastName,@Param("phoneNumber") String phoneNumber,
 			@Param("email") String email, @Param("address") String address,
 			@Param("zipCode") String zipCode) throws BadRequestException;
-			
+	
+	List<User> findByLastNameStartingWith(String lastName);
+	List<User> findByLastNameContaining(String lastName);
 }

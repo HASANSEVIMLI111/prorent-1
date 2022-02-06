@@ -19,6 +19,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import org.modelmapper.config.Configuration.AccessLevel;
+
 import com.prorent.carrental.domain.enumeration.UserRole;
 
 import lombok.AllArgsConstructor;
@@ -96,6 +98,7 @@ public class User {
 	 * Bir user birden fazla role sahip olabilir. Bu nedenle manytomany yapıldı ve
 	 * rolleri tutacak hashset tipinde bir alan eklendi.
 	 */
+
 	@ManyToMany(fetch=FetchType.LAZY)
 	@JoinTable(name="tbl_user_role",joinColumns=@JoinColumn(name="user_id"),
 	inverseJoinColumns = @JoinColumn(name="role_id"))
